@@ -8,7 +8,7 @@ This is configuration tool for Corsair gaming keyboards using the older USB prot
 Compilation
 -----------
 
-You need libusb and a C++ compiler. Simply use `make` to build the executable.
+You need libusb and jsoncpp and a C++ compiler. Simply use `make` to build the executable.
 
 
 Usage
