@@ -20,6 +20,7 @@
 
 #include "KeyUsage.h"
 #include <list>
+#include <iostream>
 
 static uint8_t findKeyUsage (const std::list<const std::map<std::string, uint8_t> *> &maps,
 			     std::string key_name)
