@@ -453,9 +453,9 @@ bool commandProfileColor (CorsairDevice *cdev, const char * const *args)
 		}
 		unsigned int c = std::stoul (args[2], nullptr, 16);
 		Color color = {
-			static_cast<uint8_t> ((c >> 16) % 0xFF),
-			static_cast<uint8_t> ((c >> 8) % 0xFF),
-			static_cast<uint8_t> (c % 0xFF)
+			static_cast<uint8_t> (c >> 16),
+			static_cast<uint8_t> (c >> 8),
+			static_cast<uint8_t> (c)
 		};
 		cdev->setProfileColor (profile_index, color);
 	}
