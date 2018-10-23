@@ -4,6 +4,7 @@ Corsair USB configuration tool
 This is configuration tool for Corsair gaming keyboards using the older USB protocol (not the newer using pure HID configuration, e.g. RGB keyboards, supported by [ckb](https://github.com/ccMSC/ckb)). Currently supported devices are:
  - Vengeance K90
  - Raptor K40
+ - Raptor K30
 
 Compilation
 -----------
