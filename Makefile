@@ -9,6 +9,7 @@ SRC= \
 	CorsairDevice.cpp \
 	K90Device.cpp \
 	K40Device.cpp \
+	K30Device.cpp \
 	JsonMacros.cpp \
 	KeyUsage.cpp \
 	main.cpp

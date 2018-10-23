@@ -19,6 +19,7 @@
 #include "CorsairDevice.h"
 #include "K90Device.h"
 #include "K40Device.h"
+#include "K30Device.h"
 
 #include "KeyUsage.h"
 #include "JsonMacros.h"
@@ -42,6 +43,7 @@ constexpr uint16_t CORSAIR_VENDOR_ID = 0x1b1c;
 enum ProductID: uint16_t {
 	CORSAIR_K90_ID = 0x1b02,
 	CORSAIR_K40_ID = 0x1b0e,
+	CORSAIR_K30_ID = 0x1b0a,
 };
 
 struct DeviceInfo {
@@ -55,6 +57,10 @@ struct DeviceInfo {
 	{
 		{ CORSAIR_K40_ID },
 		[] (libusb_device *dev) { return new K40Device (dev); }
+	},
+	{
+		{ CORSAIR_K30_ID },
+		[] (libusb_device *dev) { return new K30Device (dev); }
 	},
 };
 
